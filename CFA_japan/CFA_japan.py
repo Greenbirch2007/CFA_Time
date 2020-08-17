@@ -128,7 +128,7 @@ if __name__ == '__main__':
 
 
 
-#name,city,GetYear,oneUrl
+# name,city,GetYear,oneUrl
 # create table cfa_j(id int not null primary key auto_increment,
 # name text,
 # city text,
