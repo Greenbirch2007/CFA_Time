@@ -82,7 +82,7 @@ def insertDB(content):
     try:
 
 
-        cursor.executemany('insert into cfa_j (name,city,GetYear,oneUrl) values (%s,%s,%s,%s)', content)
+        cursor.executemany('insert into cfa_cn (name,city,GetYear,oneUrl) values (%s,%s,%s,%s)', content)
         connection.commit()
         connection.commit()
         connection.close()
@@ -101,7 +101,7 @@ if __name__ == '__main__':
     csv_l =[]
 
     # 默认访问本目录
-    excelFile = 'j.xlsx'
+    excelFile = 'cn.xlsx'
     full_items = read_xlrd(excelFile=excelFile)
     for i in full_items:
         name_list.append(i[0])
@@ -133,7 +133,7 @@ if __name__ == '__main__':
 
 
 # name,city,GetYear,oneUrl
-# create table cfa_j(id int not null primary key auto_increment,
+# create table cfa_cn(id int not null primary key auto_increment,
 # name text,
 # city text,
 #  GetYear text,
